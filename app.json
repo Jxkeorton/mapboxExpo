@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jxkeorton.mapboxtest"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiamFrZW9ydG9uOTkiLCJhIjoiY2xvcHM3dzduMGQ1eDJybXYwNXV0YXF3dyJ9.cgAkPjKWBLKjKZYzZvOA8g"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "fc739f69-76fe-45a3-b24b-0145ad71ae0e"
+      }
     }
   }
 }
